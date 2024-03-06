@@ -1,0 +1,120 @@
+.swiper {
+    padding-bottom: 55px;
+}
+
+.swiper-slide {
+    height: initial;
+}
+
+.slider-content {
+    @extend %container;
+    max-width: 1510px;
+    height: 100%;
+    padding: 0;
+
+    &__left {
+        width: 49%;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        width: 51%;
+        padding: 0 170px 0 129px;
+    }
+}
+
+.slider-content__left img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.quote {
+    color: $white;
+    font-family: Cardo;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 49px;
+    text-transform: capitalize;
+}
+
+.author {
+    color: $white;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.swiper-backface-hidden .swiper-slide {
+    background: rgb(92, 50, 73);
+}
+
+.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid rgb(126, 93, 111);
+    background: transparent;
+    opacity: 1;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 12.5px;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgb(126, 93, 111);
+}
+
+@media (max-width: 1250px) {
+    .swiper {
+        padding-bottom: 48px;
+    }
+
+    .slider-content__right {
+        padding: 50px 104px 110px 88px;
+    }
+
+    .quote {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .author {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 9.5px;
+        height: 9.5px;
+    }
+}
+
+@media (max-width: 670px) {
+    .slider-content {
+        flex-direction: column;
+
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            width: 100%;
+            padding: 30px 20px 95px 20px;
+        }
+    }
+
+    .quote {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+    }
+}

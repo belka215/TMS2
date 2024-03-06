@@ -1,0 +1,88 @@
+.works-container {
+    @extend %container;
+
+    max-width: 1510px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.work {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4);
+    height: 340px;
+    border: 2px solid $white;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &:hover .overlay {
+        opacity: 1;
+        z-index: 1;
+    }
+
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 67, 67, 0.8);
+    opacity: 0;
+    z-index: -1;
+    transition: .7s;
+}
+
+.work-title {
+    color: $white;
+    font-size: $card-title;
+    font-weight: 900;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.work-text {
+    color: $white;
+    font-size: $card-text;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+@media (max-width: 1250px) {
+    .work {
+        height: 230px;
+    }
+
+    .work-title {
+        font-size: $card-title-tablet;
+        line-height: 21px;
+    }
+
+    .work-text {
+        font-size: $card-text-tablet;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 670px) {
+    .works-container {
+        justify-content: center;
+    }
+    .work {
+        width: 160px;
+        height: 144px;
+    }
+}

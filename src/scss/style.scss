@@ -1,0 +1,15 @@
+@import "cdn";
+@import "main";
+@import "variables";
+@import "template/container.scss";
+@import "section/header.scss";
+@import "section/banner.scss";
+@import "section/features.scss";
+@import "section/works.scss";
+@import "section/our-team.scss";
+@import "section/testimonials.scss";
+@import "section/download.scss";
+@import "section/footer.scss";
+
+@import "../../node_modules/swiper/swiper.css";
+@import "../../node_modules/swiper/modules/pagination.css";
