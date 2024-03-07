@@ -427,6 +427,10 @@ html {
   display: flex;
 }
 
+.header__logo svg {
+  height: 25.75px;
+}
+
 .header-container {
   border-bottom: 1px solid #babbc5;
   justify-content: space-between;

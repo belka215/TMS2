@@ -6,6 +6,10 @@
     &__logo {
         display: flex;
         padding: 33px 0 37px 0;
+
+        svg {
+            height: 25.75px
+        }
     }
 }
 
