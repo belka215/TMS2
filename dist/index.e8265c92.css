@@ -879,6 +879,11 @@ html {
   fill: #ff4343;
 }
 
+.social-logo a svg {
+  width: 39px;
+  height: 39px;
+}
+
 @media (width <= 1250px) {
   .our-team {
     padding: 78px 0;

@@ -71,6 +71,11 @@
     &:hover path {
         fill: $red;
     }
+
+    a svg {
+        height: 39px;
+        width: 39px;
+    }
 }
 
 @media (max-width: 1250px) {
